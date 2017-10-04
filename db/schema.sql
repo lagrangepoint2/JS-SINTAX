@@ -1,0 +1,12 @@
+CREATE DATABASE sintaxJS_db;
+
+USE sintaxJS_db;
+
+CREATE TABLE users (
+	id INT AUTO_INCREMENT NOT NULL,
+	name_first VARCHAR(100) NOT NULL,
+	name_last VARCHAR(100) NOT NULL,
+	email VARCHAR(150) NOT NULL,
+	password VARCHAR(100) NOT NULL,
+	PRIMARY KEY (id)
+)
