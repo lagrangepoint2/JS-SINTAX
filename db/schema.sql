@@ -10,3 +10,17 @@ CREATE TABLE users (
 	password VARCHAR(100) NOT NULL,
 	PRIMARY KEY (id)
 )
+
+CREATE TABLE lessons (
+	id INT AUTO_INCREMENT NOT NULL,
+    user_id INT,
+	title VARCHAR(150) NOT NULL,
+	body TEXT NOT NULL,
+	rating INT(10),
+    date_created DATETIME DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (id),
+    CONSTRAINT fk_users FOREIGN KEY (user_id)
+	REFERENCES users(id)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
+)
