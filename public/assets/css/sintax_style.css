@@ -1,3 +1,13 @@
 body {
-    font-family: 'Didact Gothic', sans-serif;
-} 
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.resize {
+  height: 64px;
+  margin: 10px;
+}
+
+nav {
+    height: 100px;
+    line-height: 100px;
+}
