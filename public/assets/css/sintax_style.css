@@ -7,10 +7,28 @@ body {
   margin: 10px;
 }
 
-.nav {
-    height: 100px;
-    line-height: 100px;
-    background-color: #d7d0d3;
+
+nav {
+  height: 100px;
+  line-height: 100px;
+}
+
+/* Modal CSS */
+form, .md, .login{
+    margin-top: 50px;
+}
+
+.border {
+    border-style: solid;
+}
+
+.modal-footer {
+    margin-bottom: 25px;
+}
+.modal {
+  /* width: 75% !important; */
+  max-height: 100% !important;
+  overflow-y: hidden !important;  
 }
 
 .footer2{
