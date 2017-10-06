@@ -37,3 +37,38 @@ form, .md, .login{
 .footer1{
   background-color: #9e1f06;
 }
+
+/* Course HTML CSS */
+.bannerbg {
+    background-image: url("../img/coursebg.jpg");
+}
+
+
+/* Lesson HTML CSS */
+.lessonbg {
+    background-image: url("../img/beg1.jpg");
+}
+
+.view {
+    background-color: red;
+    height: 575px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lessontext {
+    margin: 90px;
+    /* padding: 30px; */
+}
+
+.questionsrow {
+    background-color: green;
+    height: 200px;
+}
+
+label {
+    color: black;
+}
+
