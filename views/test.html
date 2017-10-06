@@ -15,14 +15,14 @@
 </head>
 
 <body>
-    <nav class="light-blue lighten-1" role="navigation">
+    <nav class="nav" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="../public/assets/img/JSSintaxLogoBlackText480.png" class="resize" ></a>
             <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Log In</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
@@ -31,65 +31,106 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
-    <div class="section no-pad-bot" id="index-banner">
+    <!-- <div class="section no-pad-bot" id="index-banner">
         <div class="container">
             <br><br>
-            <h1 class="header center orange-text">Starter Template</h1>
+            <h1 class="header center black-text">JS Sintax</h1>
             <div class="row center">
-                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                <h5 class="header col s12 light">Don't commit the sin of false sintax.</h5>
+                <h5>Learn the correct terms, vocabulary and structures of JavaScript. Get started by loging in and starting your first lesson.</h5>
             </div>
             <div class="row center">
-                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light get-started">Get Started</a>
             </div>
             <br><br>
 
         </div>
+    </div> -->
+    <!-- SLIDER -->
+    <br>
+    <div class="slider" style="height: 600px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+        <ul class="slides" style="height: 600px;">
+            <li class="active" style="opacity: 1; transform: translateX(0px) translateY(0px);">
+                <img src="../public/assets/img/pig.jpg" alt="" style="background-image: url(../public/assets/img/pig.jpg;);">
+                <div class="caption center-align" style="opacity: 1; transform: translateY(0px) translateX(0px);">
+                    <h3>Don't commit the deadly sin of false syntax.</h3>
+                </div>
+            </li>
+            <li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
+                <img src="../public/assets/img/lava.jpg" alt="" style="background-image: url(../public/assets/img/lava.jpg;);">
+                <div class="caption left-align" style="opacity: 0; transform: translateX(-100px) translateY(0px);">
+                    <h3 class="light grey-text text-lighten-3">The capital sins of JavaScript.</h3>
+                    <h5 class="light grey-text text-lighten-3">Envy: Resenting others who progress because you don't know your parameters.</h5>
+                    <h5 class="light grey-text text-lighten-3">Lust: Looking at, imagining, and treating others as code mere objects that you only understand in your
+                        fantasies. </h5>
+                    <h5 class="light grey-text text-lighten-3">Anger: The sudden outburst of emotion — namely hostility — and thoughts about the desire to undersand
+                        what is happening.</h5>
+                </div>
+            </li>
+            <li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
+                <img src="../public/assets/img/step.jpg" alt="" style="background-image: url(../public/assets/img/step.jpg;);">
+                <div class="caption right-align" style="opacity: 0; transform: translateX(100px) translateY(0px);">
+                    <h3>Take your first step to enlightenment.</h3>
+                </div>
+            </li>
+        </ul>
+        <!-- <ul class="indicators">
+            <li class="indicator-item active"></li>
+            <li class="indicator-item"></li>
+            <li class="indicator-item"></li>
+        </ul> -->
     </div>
-
-
+    <br>
     <div class="container">
         <div class="section">
 
-            <!--   Icon Section   -->
+            <!--   testimonial Section   -->
+
             <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center">Speeds up development</h5>
-
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom
-                            components. Additionally, we refined animations and transitions to provide a smoother experience
-                            for developers.</p>
+                <div class="col s12 m6 l4">
+                    <div class="card card-small">
+                        <div class="card-image">
+                            <img src="../public/assets/img/josh.jpg">
+                            <span class="card-title">Josh</span>
+                        </div>
+                        <div class="card-content">
+                            <p>JS Sintax changed my life. Now I know what my friends are talking about.</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                        <h5 class="center">User Experience Focused</h5>
-
-                        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that
-                            incorporates components and animations that provide more feedback to users. Additionally, a single
-                            underlying responsive system across all platforms allow for a more unified user experience.</p>
+                <div class="col s12 m6 l4">
+                    <div class="card card-small">
+                        <div class="card-image">
+                            <img src="../public/assets/img/jason.jpg">
+                            <span class="card-title">Jason</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I dove into JS Sintax and learned so much. I made a splash at work with my new knowledge.</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                        <h5 class="center">Easy to work with</h5>
-
-                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started.
-                            We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                <div class="col s12 m6 l4">
+                    <div class="card card-small">
+                        <div class="card-image">
+                            <img src="../public/assets/img/deon.jpg">
+                            <span class="card-title">Deon</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I get callbacks from all the ladies now that I have JS Sintax.</p>
+                        </div>
                     </div>
                 </div>
+                <!-- <div class="clearfix"></div> -->
             </div>
-
         </div>
-        <br><br>
+
     </div>
 
-    <footer class="page-footer orange">
+    </div>
+    <br><br>
+    </div>
+
+    <footer class="page-footer footer">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -121,7 +162,7 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                Made by Thongvun Nak, Ethan Zander, Martin Perez and Bradley Sevison. &copy 2017
             </div>
         </div>
     </footer>
@@ -131,6 +172,9 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="../public/assets/js/materialize.js"></script>
     <script src="../public/assets/js/init.js"></script>
+    <script>
+        $('.slider').slider();
+    </script>
 
 </body>
 
