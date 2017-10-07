@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>JS-SINTAX</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link href="../public/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../public/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- Social Buttons CSS -->
+    <link href="../public/assets/css/font-awesome.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../public/assets/css/materialize-social.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="../public/assets/css/sintax_style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="../public/assets/img/JSSintaxLogoBlackText480.png" class="resize" ></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#sign-up-modal" class="btn modal-trigger waves-effect ">Sign Up</a></li>
+                <li><a href="#sign-in-modal" class="btn modal-trigger waves-effect ">Sign In</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <!-- Modal Structure -->
+    <div id="sign-up-modal" class="modal modal-fixed-footer">
+        <!-- Sign Up/Sign In -->
+        <div class="modal-content">
+            <div class="row center-align">
+                <div class="col s6 border">
+                    <h5>SIGN UP</h5>
+                </div>
+                <div class="col s6 border">
+                    <h5>SIGN IN</h5>
+                </div>
+            </div>
+            <!-- Form -->
+            <div class="row center-align">
+                <h5 class="md">Get ready to learn JavaScript</h5>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="conf-password" type="password" class="validate">
+                            <label for="conf-password">Confirm Password</label>
+                        </div>
+                    </div>
+                    <!-- Sign Up Button -->
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Sign Up
+                        <i class="material-icons right">send</i>
+                        </button>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row center-align">
+                <div class="col s6">
+                    <a class="waves-effect waves-light btn-large social facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>Sign in with facebook</a>
+                </div>
+                <div class="col s6">
+                    <a class="waves-effect waves-light btn-large social google">
+                    <i class="fa fa-google"></i>Sign in with Google</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div id="sign-in-modal" class="modal modal-fixed-footer">
+        <!-- Sign Up/Sign In -->
+        <div class="modal-content">
+            <div class="row center-align">
+                <div class="col s6 border">
+                    <h5>SIGN UP</h5>
+                </div>
+                <div class="col s6 border">
+                    <h5>SIGN IN</h5>
+                </div>
+            </div>
+            <!-- Form -->
+            <div class="row center-align">
+                <h5 class="md">Log In</h5>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                        <!-- Log In Button -->
+                        <button class="btn waves-effect waves-light login" type="submit" name="action">Log In
+                        <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row center-align">
+                <div class="col s6">
+                    <a class="waves-effect waves-light btn-large social facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>Log in with facebook</a>
+                </div>
+                <div class="col s6">
+                    <a class="waves-effect waves-light btn-large social google">
+                        <i class="fa fa-google"></i>Log in with Google</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Our Mission -->
+    <div class="section no-pad-bot light" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center-align black-text">- Our Mission -</h1>
+            <div class="row center-align">
+                <h5 class="header col s12 light">Helping you not commit the cardinal sins of JavaScript programming.</h5>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="section no-pad-bot light" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center-align black-text">About Us</h1>
+            <div class="row center-align">
+                <h5 class="header col s12 light">JS-SINTAX was created by a small group of fullstack bootcamp students from the University of Utah wanting
+                    to find out the best way to learn JavaScript. They thought about the common difficulties in quickly learning
+                    and absorbing JavaScript as a programming language and what aspects they were the weakest in with their
+                    technical knowledge of the language. After being on the same page of what was the hardest information
+                    to retain, they realized it was the termimonlogy of the syntax of JavaScript, and JS-SYNTAX was born.
+                    Our plan was to make a fun and simple way to learn and retain the syntax of JavaScript so that students
+                    of the language can have that extra edge in technical knowledg.</h5>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- Client List -->
+    <div class="container">
+        <div class="section">
+            <br><br>
+            <hr>
+            <h1 class="header center-align black-text">- Client List -</h1>
+            <!--   Logo Section   -->
+            <div class="row">
+                <div class="col s4 m4">
+                    <img src="../public/assets/img/dev-mountain-logo.png">
+                </div>
+                <div class="col s4 m4">
+                    <img src="../public/assets/img/diveutah.png">
+                </div>
+                <div class="col s4 m4">
+                    <img src="../public/assets/img/google2.png">
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="row">
+                <div class="col s4 m4">
+                    <img src="../public/assets/img/lynda.png">
+                </div>
+                <div class="col s4 m4">
+                    <img src="../public/assets/img/vivint.png">
+                </div>
+                <div class="col s4 m4">
+                    <img src="../public/assets/img/wgu.png">
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <!-- Team -->
+    <div class="container">
+            <div class="section">
+                <br><br>
+                <hr>
+                <h1 class="header center-align black-text">- Our Team -</h1>
+                <!--   Logo Section   -->
+                <div class="row">
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="../public/assets/img/beg1.jpg">
+                                    <span class="card-title">Intro Diving Course Into JavaScript</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>An introduction to JavaScript variables, built-in data structures, and common functions.</p>
+                                </div>
+                                <div class="card-action center-align">
+                                    <a href="#">Start Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="../public/assets/img/beg2.jpg">
+                                    <span class="card-title">Getting Your Feet a Little More Wet</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>Our second course session discusses boolean conditions, control flow, and arrays.</p>
+                                </div>
+                                <div class="card-action center-align">
+                                    <a href="#">Start Course</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Second Row -->
+                <div class="row">
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="../public/assets/img/beg1.jpg">
+                                    <span class="card-title">Intro Diving Course Into JavaScript</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>An introduction to JavaScript variables, built-in data structures, and common functions.</p>
+                                </div>
+                                <div class="card-action center-align">
+                                    <a href="#">Start Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="../public/assets/img/beg2.jpg">
+                                    <span class="card-title">Getting Your Feet a Little More Wet</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>Our second course session discusses boolean conditions, control flow, and arrays.</p>
+                                </div>
+                                <div class="card-action center-align">
+                                    <a href="#">Start Course</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <br><br>
+        </div>
+
+
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Company Bio</h5>
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would
+                        help support and continue development on this project and is greatly appreciated.</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../public/assets/js/materialize.js"></script>
+    <script src="../public/assets/js/init.js"></script>
+
+    <!-- Init Modal -->
+    <script>
+        $(document).ready(function () {
+
+
+            $('.modal').modal();
+        });
+    </script>
+
+</body>
+
+</html>
