@@ -72,3 +72,8 @@ label {
     color: black;
 }
 
+
+/* About Us T */
+.row.col.m6 {
+    width: 380px;
+}
