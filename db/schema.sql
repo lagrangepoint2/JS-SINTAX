@@ -13,14 +13,11 @@ CREATE TABLE users (
 
 CREATE TABLE lessons (
 	id INT AUTO_INCREMENT NOT NULL,
-    user_id INT,
 	title VARCHAR(150) NOT NULL,
 	body TEXT NOT NULL,
 	rating INT(10),
+	sins INT(10),
+	resources VARCHAR(500),
     date_created DATETIME DEFAULT CURRENT_TIMESTAMP,
-	PRIMARY KEY (id),
-    CONSTRAINT fk_users FOREIGN KEY (user_id)
-	REFERENCES users(id)
-	ON DELETE CASCADE
-	ON UPDATE CASCADE
+    PRIMARY KEY (id)
 )

@@ -18,8 +18,8 @@ module.exports = function(app){
              name_last: req.body.lastname,
              email: req.body.email,
              password: req.body.password
-         }).then(function(dbUser){
+        }).then(function(dbUser){
              res.json(dbUser);
-         });
+        });
     });
 }
