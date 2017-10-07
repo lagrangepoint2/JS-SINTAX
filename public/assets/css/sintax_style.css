@@ -74,6 +74,8 @@ label {
 
 
 /* About Us T */
-.row.col.m6 {
-    width: 380px;
+.sizer {
+    width: 75%;
+    margin: 0 auto;
+    
 }
