@@ -10,6 +10,7 @@ module.exports = function(app){
             }
         }).then(function(dbUsers){
             console.log(dbUsers);
+            sessionStorage.setItem("UserID", dbUsers.dataValues.id);
         });
     });
     
