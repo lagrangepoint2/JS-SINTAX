@@ -8,6 +8,8 @@ CREATE TABLE users (
 	name_last VARCHAR(100) NOT NULL,
 	email VARCHAR(150) NOT NULL,
 	password VARCHAR(100) NOT NULL,
+	createdAt DATETIME,
+	updatedAt DATETIME,
 	PRIMARY KEY (id)
 )
 
