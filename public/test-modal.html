@@ -21,69 +21,82 @@
 </head>
 
 <body>
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="../public/assets/img/JSSintaxLogoBlackText480.png" class="resize" ></a>
+    <nav class="nav" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">
+                <img src="../public/assets/img/JSSintaxLogoBlackText480.png" class="resize">
+            </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#sign-up-modal" class="btn modal-trigger waves-effect ">Sign Up</a></li>
-                <li><a href="#sign-in-modal" class="btn modal-trigger waves-effect ">Sign In</a></li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Courses</a>
+                </li>
+                <li>
+                    <a href="#sign-up-modal" class="modal-trigger">Sign Up</a>
+                </li>
+                <li>
+                    <a href="#sign-in-modal" class="modal-trigger">Sign In</a>
+                </li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">Navbar Link</a></li>
+                <li>
+                    <a href="#">Navbar Link</a>
+                </li>
             </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="nav-mobile" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
         </div>
     </nav>
 
     <!-- Modal Structure -->
+    <!-- START SIGN UP MODAL-->
     <div id="sign-up-modal" class="modal modal-fixed-footer">
-        <!-- Sign Up/Sign In -->
         <div class="modal-content">
             <div class="row center-align">
-                <div class="col s6 border">
+                <div class="col s12 m12 l12 border modal-header white-text">
                     <h5>SIGN UP</h5>
-                </div>
-                <div class="col s6 border">
-                    <h5>SIGN IN</h5>
                 </div>
             </div>
             <!-- Form -->
             <div class="row center-align">
-                <h5 class="md">Get ready to learn JavaScript</h5>
+                <h5 class="md">Enter your information to create an accout and get started.</h5>
                 <form class="col s12">
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col s12 m4 l4">
                             <input id="first_name" type="text" class="validate">
                             <label for="first_name">First Name</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col s12 m4 l4">
                             <input id="last_name" type="text" class="validate">
                             <label for="last_name">Last Name</label>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
+                        <div class="input-field col s12 m4 l4">
                             <input id="email" type="email" class="validate">
                             <label for="email">Email</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col s12 m6 l6">
                             <input id="password" type="password" class="validate">
                             <label for="password">Password</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col s12 m6 l6">
                             <input id="conf-password" type="password" class="validate">
                             <label for="conf-password">Confirm Password</label>
                         </div>
                     </div>
                     <!-- Sign Up Button -->
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Sign Up
+                    <button class="btn red-btn waves-effect waves-light" type="submit" name="action">Sign Up
                         <i class="material-icons right">send</i>
-                        </button>
+                    </button>
+                <!-- END FORM -->
                 </form>
             </div>
         </div>
@@ -91,30 +104,29 @@
             <div class="row center-align">
                 <div class="col s6">
                     <a class="waves-effect waves-light btn-large social facebook">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>Sign in with facebook</a>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>Sign in with facebook</a>
                 </div>
                 <div class="col s6">
                     <a class="waves-effect waves-light btn-large social google">
-                    <i class="fa fa-google"></i>Sign in with Google</a>
+                        <i class="fa fa-google"></i>Sign in with Google</a>
                 </div>
             </div>
         </div>
+        <!-- END SIGN UP MODAL -->
     </div>
-    <!--  -->
+
+    <!-- START SIGN IN MODAL -->
     <div id="sign-in-modal" class="modal modal-fixed-footer">
         <!-- Sign Up/Sign In -->
         <div class="modal-content">
             <div class="row center-align">
-                <div class="col s6 border">
-                    <h5>SIGN UP</h5>
-                </div>
-                <div class="col s6 border">
+                <div class="col s12 m12 l12 border modal-header white-text">
                     <h5>SIGN IN</h5>
                 </div>
             </div>
             <!-- Form -->
             <div class="row center-align">
-                <h5 class="md">Log In</h5>
+                <h5 class="md">If you already have an account enter your email and password below to sign in.</h5>
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
@@ -128,8 +140,8 @@
                             <label for="password">Password</label>
                         </div>
                         <!-- Log In Button -->
-                        <button class="btn waves-effect waves-light login" type="submit" name="action">Log In
-                        <i class="material-icons right">send</i>
+                        <button class="btn red-btn waves-effect waves-light login" type="submit" name="action">Log In
+                            <i class="material-icons right">send</i>
                         </button>
                     </div>
                 </form>
@@ -147,69 +159,96 @@
                 </div>
             </div>
         </div>
+        <!-- END SIGN IN MODAL -->
     </div>
-
-
-
-    <div class="section no-pad-bot" id="index-banner">
-        <div class="container">
-            <br><br>
-            <h1 class="header center orange-text">Starter Template</h1>
-            <div class="row center">
-                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-            </div>
-            <div class="row center">
-                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-            </div>
-            <br><br>
-
-        </div>
-    </div>
-
-
+    <!-- START CONTENT -->
     <div class="container">
+        <!-- START SLIDER SECTION -->
         <div class="section">
-
-            <!--   Icon Section   -->
+            <!-- START SLIDER ROW -->
             <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center">Speeds up development</h5>
-
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom
-                            components. Additionally, we refined animations and transitions to provide a smoother experience
-                            for developers.</p>
-                    </div>
+                <!-- START SLIDER -->
+                <div class="slider" style="height: 600px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                    <ul class="slides" style="height: 600px;">
+                        <li class="active" style="opacity: 1; transform: translateX(0px) translateY(0px);">
+                            <img src="../public/assets/img/pig.jpg" alt="" style="background-image: url(../public/assets/img/pig.jpg;);">
+                            <div class="caption center-align" style="opacity: 1; transform: translateY(0px) translateX(0px);">
+                                <h3>Don't commit the deadly sin of false syntax.</h3>
+                            </div>
+                        </li>
+                        <li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
+                            <img src="../public/assets/img/lava.jpg" alt="" style="background-image: url(../public/assets/img/lava.jpg;);">
+                            <div class="caption left-align" style="opacity: 0; transform: translateX(-100px) translateY(0px);">
+                                <h3 class="light grey-text text-lighten-3">The capital sins of JavaScript.</h3>
+                                <h5 class="light grey-text text-lighten-3">Envy: Resenting others who progress because you don't know your parameters.</h5>
+                                <h5 class="light grey-text text-lighten-3">Lust: Looking at, imagining, and treating others as code mere objects that you only understand
+                                    in your fantasies. </h5>
+                                <h5 class="light grey-text text-lighten-3">Anger: The sudden outburst of emotion — namely hostility — and thoughts about the desire
+                                    to undersand what is happening.</h5>
+                            </div>
+                        </li>
+                        <li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
+                            <img src="../public/assets/img/step.jpg" alt="" style="background-image: url(../public/assets/img/step.jpg;);">
+                            <div class="caption right-align" style="opacity: 0; transform: translateX(100px) translateY(0px);">
+                                <h3>Take your first step to enlightenment.</h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- END SLIDER -->
                 </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                        <h5 class="center">User Experience Focused</h5>
-
-                        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that
-                            incorporates components and animations that provide more feedback to users. Additionally, a single
-                            underlying responsive system across all platforms allow for a more unified user experience.</p>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                        <h5 class="center">Easy to work with</h5>
-
-                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started.
-                            We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-                    </div>
-                </div>
+                <!-- END ROW -->
             </div>
-
+            <!-- END SECTION -->
         </div>
-        <br><br>
-    </div>
+        <!-- START TESTIMONIAL SECTION -->
+        <div class="section container">
+            <!-- START TESTIMONIAL ROW -->
+            <div class="row">
+                <!-- START TESTIMONIAL "JOSH" -->
+                <div class="col s12 m6 l4">
+                    <div class="card card-small">
+                        <div class="card-image">
+                            <img src="../public/assets/img/josh.jpg">
+                            <span class="card-title">Josh</span>
+                        </div>
+                        <div class="card-content">
+                            <p>JS Sintax changed my life. Now I know what my friends are talking about.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- START TESTIMONIAL "JASON" -->
+                <div class="col s12 m6 l4">
+                    <div class="card card-small">
+                        <div class="card-image">
+                            <img src="../public/assets/img/jason.jpg">
+                            <span class="card-title">Jason</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I dove into JS Sintax and learned so much. I made a splash at work with my new knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- START TESTIMONIAL "DEON" -->
+                <div class="col s12 m6 l4">
+                    <div class="card card-small">
+                        <div class="card-image">
+                            <img src="../public/assets/img/deon.jpg">
+                            <span class="card-title">Deon</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I get callbacks from all the ladies now that I have JS Sintax.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END ROW -->
+            </div>
+            <!-- END SECTION -->
+        </div>
 
-    <footer class="page-footer orange">
+        <!-- END CONTENT -->
+    </div>
+    <!-- START FOOTER -->
+    <footer class="page-footer footer">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -222,28 +261,45 @@
                 <div class="col l3 s12">
                     <h5 class="white-text">Settings</h5>
                     <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
+                        <li>
+                            <a class="white-text" href="#!">Link 1</a>
+                        </li>
+                        <!-- <li>
+                            <a class="white-text" href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="#!">Link 4</a>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="col l3 s12">
                     <h5 class="white-text">Connect</h5>
                     <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
+                        <li>
+                            <a class="white-text" href="#!">Link 1</a>
+                        </li>
+                        <!-- <li>
+                            <a class="white-text" href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="#!">Link 4</a>
+                        </li> -->
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="dark-red">
             <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                2017 &copy  Thongvun Nak, Ethan Zander, Martin Perez and Bradley Sevison. 
             </div>
         </div>
+        <!-- END FOOTER -->
     </footer>
 
 
@@ -252,11 +308,12 @@
     <script src="../public/assets/js/materialize.js"></script>
     <script src="../public/assets/js/init.js"></script>
 
-    <!-- Init Modal -->
+    <!-- INIT JAVASCRIPT FUNCTIONS -->
     <script>
         $(document).ready(function () {
-
-
+            //SLIDER
+            $('.slider').slider();
+            //MODAL
             $('.modal').modal();
         });
     </script>
