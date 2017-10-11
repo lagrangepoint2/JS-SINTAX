@@ -62,7 +62,7 @@ form, .md, .login{
     margin-bottom: 25px;
 }
 .modal {
-  /* width: 75% !important; */
+  height: 84.5% !important;
   max-height: 100% !important;
   overflow-y: hidden !important;  
 }
