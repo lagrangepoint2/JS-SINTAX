@@ -8,25 +8,62 @@ body {
 }
 
 
-nav {
+.nav {
   height: 100px;
   line-height: 100px;
+  background-color: #9e1f06;
+}
+.card-small {
+  width:250px;
+ }
+ .dark-red {
+   background-color: #590001;
+ }
+ .btn{
+  background-color: #9e1f06;
+}
+/* .btn:visited{
+  background-color: #590001;
+} */
+.btn:hover {
+  background-color: #590001;
+}
+.btn:active{
+  background-color: #9e1f06;
+}
+.footer {
+  background-color: #9e1f06;
 }
 
-/* Modal CSS */
+
+
+/*  START MODAL CSS */
 form, .md, .login{
     margin-top: 50px;
 }
-
+.modal-header {
+  background-color: #9e1f06;
+}
 .border {
     border-style: solid;
 }
-
+/* label focus color */
+.input-field input:focus + label {
+  color: #590001 !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #590001 !important;
+  box-shadow: 0 1px 0 0 #590001 !important
+}
+/* .red-btn {
+  background-color: #9e1f06;
+} */
 .modal-footer {
     margin-bottom: 25px;
 }
 .modal {
-  /* width: 75% !important; */
+  height: 84.5% !important;
   max-height: 100% !important;
   overflow-y: hidden !important;  
 }
