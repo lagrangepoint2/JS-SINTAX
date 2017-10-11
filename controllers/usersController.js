@@ -10,6 +10,9 @@ module.exports = function(app){
             }
         }).then(function(dbUsers){
             console.log(dbUsers);
+            req.user = dbUsers.dataValues
+            let id = req.user.id
+            res.redirect("/");
         });
     });
     
