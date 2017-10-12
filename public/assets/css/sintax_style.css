@@ -19,6 +19,9 @@ body {
  .dark-red {
    background-color: #590001;
  }
+ .light-red {
+  background-color: #9e1f06;
+}
  .btn{
   background-color: #9e1f06;
 }
@@ -56,9 +59,7 @@ form, .md, .login{
   border-bottom: 1px solid #590001 !important;
   box-shadow: 0 1px 0 0 #590001 !important
 }
-/* .red-btn {
-  background-color: #9e1f06;
-} */
+
 .modal-footer {
     margin-bottom: 25px;
 }
@@ -83,9 +84,7 @@ form, .md, .login{
 
 
 /* Lesson HTML CSS */
-.lessonbg {
-    background-image: url("../img/beg1.jpg");
-}
+
 
 .view {
     background-color: red;
@@ -102,7 +101,8 @@ form, .md, .login{
 }
 
 .questionsrow {
-    background-color: green;
+    border: 2px;
+    border-color: #590001;
     height: 200px;
 }
 

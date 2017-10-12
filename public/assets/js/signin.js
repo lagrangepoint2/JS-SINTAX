@@ -7,9 +7,9 @@ $(document).ready(function () {
         event.preventDefault();
         console.log('this button works');
         $.get('/login/' + user + '/' + password, function (data) {
-        $('').hide();
-        $('').hide();
-        $('').show();
+        $('#btn-signup').hide();
+        $('#btn-signin').hide();
+        $('#btn-logout').show();
         });
     });
 });
