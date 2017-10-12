@@ -11,4 +11,15 @@ CREATE TABLE users (
 	createdAt DATETIME,
 	updatedAt DATETIME,
 	PRIMARY KEY (id)
-);
+)
+
+CREATE TABLE lessons (
+	id INT AUTO_INCREMENT NOT NULL,
+	title VARCHAR(150) NOT NULL,
+	body TEXT NOT NULL,
+	rating INT(10),
+	sins INT(10),
+	resources VARCHAR(500),
+    date_created DATETIME DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+)
