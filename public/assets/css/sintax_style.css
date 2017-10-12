@@ -22,9 +22,9 @@ body {
  .btn{
   background-color: #9e1f06;
 }
-/* .btn:visited{
-  background-color: #590001;
-} */
+#btn-logout{
+  visibility: hidden;
+}
 .btn:hover {
   background-color: #590001;
 }
@@ -77,7 +77,8 @@ form, .md, .login{
 
 /* Course HTML CSS */
 .bannerbg {
-    background-image: url("../img/learn.jpg");
+    background-image: url("../img/learn2.jpg");
+
 }
 
 
