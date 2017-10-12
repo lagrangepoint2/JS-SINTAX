@@ -10,7 +10,7 @@ $(document).ready(function () {
         $('#btn-signup').hide();
         $('#btn-signin').hide();
         $('#btn-logout').show();
-        window.location.href = "test-course.html";
+        window.location.href = "/courses";
         });
     });
 });
