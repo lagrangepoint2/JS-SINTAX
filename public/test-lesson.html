@@ -27,9 +27,15 @@
                 <img src="./assets/img/JSSintaxLogoBlackText480.png" class="resize">
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/courses">Courses</a></li>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/about">About Us</a>
+                </li>
+                <li>
+                    <a href="/courses">Courses</a>
+                </li>
                 <li>
                     <a href="#sign-up-modal" class="modal-trigger">Sign Up</a>
                 </li>
@@ -40,7 +46,19 @@
 
             <ul id="nav-mobile" class="side-nav">
                 <li>
-                    <a href="#">Navbar Link</a>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/about">About Us</a>
+                </li>
+                <li>
+                    <a href="/courses">Courses</a>
+                </li>
+                <li>
+                    <a href="#sign-up-modal" class="modal-trigger" id="btn-signup">Sign Up</a>
+                </li>
+                <li>
+                    <a href="#sign-in-modal" class="modal-trigger" id="btn-signin">Sign In</a>
                 </li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse">
@@ -90,7 +108,7 @@
                     <button class="btn red-btn waves-effect waves-light" type="submit" name="action">Sign Up
                         <i class="material-icons right">send</i>
                     </button>
-                <!-- END FORM -->
+                    <!-- END FORM -->
                 </form>
             </div>
         </div>
@@ -162,16 +180,16 @@
     <div class="container">
         <!-- START SECTION -->
         <div class="section">
-    <!-- Jumbotron? -->
-    <div class="section no-pad-bot lessonbg" id="index-banner">
-        <div class="container">
-            <h1 class="header left-align black-text">10 Commandments of JavaScript (Expanded)</h1>
-            <div class="row left-align">
-                <h5 class="header col s12 light">10 tips to make working with JavaScript a whole lot easier!</h5>
+            <!-- Jumbotron? -->
+            <div class="section no-pad-bot lessonbg" id="index-banner">
+                <div class="container">
+                    <h1 class="header left-align black-text">10 Commandments of JavaScript (Expanded)</h1>
+                    <div class="row left-align">
+                        <h5 class="header col s12 light">10 tips to make working with JavaScript a whole lot easier!</h5>
+                    </div>
+                    <br>
+                </div>
             </div>
-            <br>
-        </div>
-    </div>
 
     <!-- Lesson Section -->
     <div class="section">
@@ -206,8 +224,11 @@
                             </div>
                             <div class="modal-footer">
                               <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+
                             </div>
-                          </div>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
@@ -215,66 +236,45 @@
     </div>
 
 
-        </div>
-    </div>
-</div>
-</div>
-    
-
-<!-- START FOOTER -->
-<footer class="page-footer footer">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Company Bio</h5>
-                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would
-                    help support and continue development on this project and is greatly appreciated.</p>
-
-
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Settings</h5>
-                <ul>
-                    <li>
-                        <a class="white-text" href="#!">Link 1</a>
-                    </li>
-                    <!-- <li>
-                        <a class="white-text" href="#!">Link 2</a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="#!">Link 3</a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="#!">Link 4</a>
-                    </li> -->
-                </ul>
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Connect</h5>
-                <ul>
-                    <li>
-                        <a class="white-text" href="#!">Link 1</a>
-                    </li>
-                    <!-- <li>
-                        <a class="white-text" href="#!">Link 2</a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="#!">Link 3</a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="#!">Link 4</a>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="dark-red">
+    <!-- START FOOTER -->
+    <footer class="page-footer footer">
         <div class="container">
-            2017 &copy  Thongvun Nak, Ethan Zander, Martin Perez and Bradley Sevison. 
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Who We Are</h5>
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would
+                        help support and continue development on this project and is greatly appreciated.</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">JS-SINTAX TEAM</h5>
+                    <ul>
+                        <li>
+                            <a class="white-text" href="https://github.com/ethanzander">Ethan Zander</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="https://github.com/martinperezsh">Martin Perez</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="https://github.com/hads17">Bradley Sevison</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="https://github.com/lagrangepoint2">Thongvun Nak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- END FOOTER -->
-</footer>
+        <div class="dark-red">
+            <div class="container">
+                2017 &copy Thongvun Nak, Ethan Zander, Martin Perez and Bradley Sevison.
+            </div>
+        </div>
+        <!-- END FOOTER -->
+    </footer>
 
 
 
@@ -283,7 +283,7 @@
 
     <script src="./assets/js/materialize.js"></script>
     <script src="./assets/js/init.js"></script>
-    <script src="./assets/js/quiz.js"></script>    
+    <script src="./assets/js/quiz.js"></script>
 
     <script src="/assets/js/signin.js"></script>
 

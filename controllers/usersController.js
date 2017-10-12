@@ -17,31 +17,17 @@ module.exports = function(app) {
       });
   });
 
-  app.post("/courses", function(req, res) {
-    db.users
-      .create({
-        name_first: req.body.first_name,
-        name_last: req.body.last_name,
-        email: req.body.email,
-        password: req.body.password
-      })
-      .then(function(dbUsers) {
-        // res.json(dbUsers);
-        // res.sendFile(path.join(__dirname, "../public/test-course.html"));
-      });
-  });
-
-  //   app.post("/api/newUser", function(req, res) {
-  //     db.users
-  //       .create({
-  //         name_first: req.body.first_name,
-  //         name_last: req.body.last_name,
-  //         email: req.body.email,
-  //         password: req.body.password
-  //       })
-  //       .then(function(dbUsers) {
-  //         // res.json(dbUsers);
-  //             res.sendFile(path.join(__dirname, "../public/test-course.html"));
-  //       });
-  //   });
+    app.post("/api/newUser", function(req, res) {
+      db.users
+        .create({
+          name_first: req.body.first_name,
+          name_last: req.body.last_name,
+          email: req.body.email,
+          password: req.body.password
+        })
+        .then(function(dbUsers) {
+          // res.json(dbUsers);
+              res.sendFile(path.join(__dirname, "../public/test-course.html"));
+        });
+    });
 };
