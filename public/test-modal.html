@@ -27,14 +27,23 @@
                 <img src="./assets/img/JSSintaxLogoBlackText480.png" class="resize">
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/courses">Courses</a></li>
                 <li>
-                    <a href="#sign-up-modal" class="modal-trigger">Sign Up</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="#sign-in-modal" class="modal-trigger">Sign In</a>
+                    <a href="/about">About Us</a>
+                </li>
+                <li>
+                    <a href="/courses">Courses</a>
+                </li>
+                <li>
+                    <a href="#sign-up-modal" class="modal-trigger" id="btn-signup">Sign Up</a>
+                </li>
+                <li>
+                    <a href="#sign-in-modal" class="modal-trigger" id="btn-signin">Sign In</a>
+                </li>
+                <li>
+                    <a href="/" id="btn-logout">Sign In</a>
                 </li>
             </ul>
 
@@ -90,7 +99,7 @@
                     <button class="btn red-btn waves-effect waves-light" type="submit" name="action">Sign Up
                         <i class="material-icons right">send</i>
                     </button>
-                <!-- END FORM -->
+                    <!-- END FORM -->
                 </form>
             </div>
         </div>
@@ -198,7 +207,7 @@
             <!-- END SECTION -->
         </div>
         <!-- START TESTIMONIAL SECTION -->
-        <div class="section container">
+        <div class="section">
             <!-- START TESTIMONIAL ROW -->
             <h1 class="header center-align black-text">Testimonials</h1>
             <hr>
@@ -206,7 +215,7 @@
             <br>
             <div class="row">
                 <!-- START TESTIMONIAL "JOSH" -->
-                <div class="col s12 m6 l4">
+                <div class="col s12 m4">
                     <div class="card card-small">
                         <div class="card-image">
                             <img src="./assets/img/josh.jpg">
@@ -218,7 +227,7 @@
                     </div>
                 </div>
                 <!-- START TESTIMONIAL "JASON" -->
-                <div class="col s12 m6 l4">
+                <div class="col s12 m4">
                     <div class="card card-small">
                         <div class="card-image">
                             <img src="./assets/img/jason.jpg">
@@ -230,7 +239,7 @@
                     </div>
                 </div>
                 <!-- START TESTIMONIAL "DEON" -->
-                <div class="col s12 m6 l4">
+                <div class="col s12 m4">
                     <div class="card card-small">
                         <div class="card-image">
                             <img src="./assets/img/deon.jpg">
@@ -245,9 +254,7 @@
             </div>
             <!-- END SECTION -->
         </div>
-
-        <!-- END CONTENT -->
-    </div>
+    </div><!-- END CONTENT -->
     <!-- START FOOTER -->
     <footer class="page-footer footer">
         <div class="container">
@@ -282,7 +289,7 @@
         </div>
         <div class="dark-red">
             <div class="container">
-                2017 &copy  Thongvun Nak, Ethan Zander, Martin Perez and Bradley Sevison. 
+                2017 &copy Thongvun Nak, Ethan Zander, Martin Perez and Bradley Sevison.
             </div>
         </div>
         <!-- END FOOTER -->
