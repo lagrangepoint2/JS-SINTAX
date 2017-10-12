@@ -27,7 +27,7 @@ module.exports = function(app) {
         })
         .then(function(dbUsers) {
           // res.json(dbUsers);
-              res.sendFile(path.join(__dirname, "../public/test-course.html"));
+              res.redirect('/courses');
         });
     });
 };
