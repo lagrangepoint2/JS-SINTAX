@@ -49,7 +49,19 @@
 
             <ul id="nav-mobile" class="side-nav">
                 <li>
-                    <a href="#">Navbar Link</a>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/about">About Us</a>
+                </li>
+                <li>
+                    <a href="/courses">Courses</a>
+                </li>
+                <li>
+                    <a href="#sign-up-modal" class="modal-trigger" id="btn-signup">Sign Up</a>
+                </li>
+                <li>
+                    <a href="#sign-in-modal" class="modal-trigger" id="btn-signin">Sign In</a>
                 </li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse">
@@ -70,7 +82,7 @@
             <!-- Form -->
             <div class="row center-align">
                 <h5 class="md">Enter your information to create an accout and get started.</h5>
-                <form class="col s12" action="/api/courses" method="post">
+                <form class="col s12" action="/api/newUser" method="post">
                     <div class="row">
                         <div class="input-field col s12 m4 l4">
                             <input id="first_name" type="text" class="validate" name="first_name">
@@ -254,7 +266,8 @@
             </div>
             <!-- END SECTION -->
         </div>
-    </div><!-- END CONTENT -->
+    </div>
+    <!-- END CONTENT -->
     <!-- START FOOTER -->
     <footer class="page-footer footer">
         <div class="container">
