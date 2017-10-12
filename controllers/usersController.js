@@ -14,6 +14,7 @@ module.exports = function(app) {
       })
       .then(function(dbUsers) {
         console.log(dbUsers);
+        res.redirect('/courses');
       });
   });
 
