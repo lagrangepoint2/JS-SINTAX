@@ -21,69 +21,76 @@
 </head>
 
 <body>
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="../public/assets/img/JSSintaxLogoBlackText480.png" class="resize" ></a>
+    <nav class="nav" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">
+                <img src="./assets/img/JSSintaxLogoBlackText480.png" class="resize">
+            </a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
                 <li><a href="/courses">Courses</a></li>
-                <li><a href="#sign-up-modal" class="btn modal-trigger waves-effect ">Sign Up</a></li>
-                <li><a href="#sign-in-modal" class="btn modal-trigger waves-effect ">Sign In</a></li>
+                <li>
+                    <a href="#sign-up-modal" class="modal-trigger">Sign Up</a>
+                </li>
+                <li>
+                    <a href="#sign-in-modal" class="modal-trigger">Sign In</a>
+                </li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">Navbar Link</a></li>
+                <li>
+                    <a href="#">Navbar Link</a>
+                </li>
             </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="nav-mobile" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
         </div>
     </nav>
 
     <!-- Modal Structure -->
+    <!-- START SIGN UP MODAL-->
     <div id="sign-up-modal" class="modal modal-fixed-footer">
-        <!-- Sign Up/Sign In -->
         <div class="modal-content">
             <div class="row center-align">
-                <div class="col s6 border">
+                <div class="col s12 m12 l12 border modal-header white-text">
                     <h5>SIGN UP</h5>
-                </div>
-                <div class="col s6 border">
-                    <h5>SIGN IN</h5>
                 </div>
             </div>
             <!-- Form -->
             <div class="row center-align">
-                <h5 class="md">Get ready to learn JavaScript</h5>
-                <form class="col s12">
+                <h5 class="md">Enter your information to create an accout and get started.</h5>
+                <form class="col s12" action="/api/newUser" method="post">
                     <div class="row">
-                        <div class="input-field col s6">
-                            <input id="first_name" type="text" class="validate">
+                        <div class="input-field col s12 m4 l4">
+                            <input id="first_name" type="text" class="validate" name="first_name">
                             <label for="first_name">First Name</label>
                         </div>
-                        <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate">
+                        <div class="input-field col s12 m4 l4">
+                            <input id="last_name" type="text" class="validate" name="last_name">
                             <label for="last_name">Last Name</label>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
+                        <div class="input-field col s12 m4 l4">
+                            <input id="email" type="email" class="validate" name="email">
                             <label for="email">Email</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s6">
-                            <input id="password" type="password" class="validate">
+                        <div class="input-field col s12 m6 l6">
+                            <input id="password" type="password" class="validate" name="password">
                             <label for="password">Password</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col s12 m6 l6">
                             <input id="conf-password" type="password" class="validate">
                             <label for="conf-password">Confirm Password</label>
                         </div>
                     </div>
                     <!-- Sign Up Button -->
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Sign Up
+                    <button class="btn red-btn waves-effect waves-light" type="submit" name="action">Sign Up
                         <i class="material-icons right">send</i>
-                        </button>
+                    </button>
+                <!-- END FORM -->
                 </form>
             </div>
         </div>
@@ -91,45 +98,47 @@
             <div class="row center-align">
                 <div class="col s6">
                     <a class="waves-effect waves-light btn-large social facebook">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>Sign in with facebook</a>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>Sign in with facebook</a>
                 </div>
                 <div class="col s6">
                     <a class="waves-effect waves-light btn-large social google">
-                    <i class="fa fa-google"></i>Sign in with Google</a>
+                        <i class="fa fa-google"></i>Sign in with Google</a>
                 </div>
             </div>
         </div>
+        <!-- END SIGN UP MODAL -->
     </div>
-    <!--  -->
+
+    <!-- START SIGN IN MODAL -->
     <div id="sign-in-modal" class="modal modal-fixed-footer">
         <!-- Sign Up/Sign In -->
         <div class="modal-content">
             <div class="row center-align">
-                <div class="col s6 border">
-                    <h5>SIGN UP</h5>
-                </div>
-                <div class="col s6 border">
+                <div class="col s12 m12 l12 border modal-header white-text">
                     <h5>SIGN IN</h5>
                 </div>
             </div>
             <!-- Form -->
             <div class="row center-align">
-                <h5 class="md">Log In</h5>
+
+                <h5 class="md">If you already have an account enter your email and password below to sign in.</h5>
                 <form class="col s12">
+
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
+                            <input id="login-email" type="email" class="validate" name="login-email">
                             <label for="email">Email</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="password" type="password" class="validate">
+                            <input id="login-password" type="password" class="validate" name="login-password">
                             <label for="password">Password</label>
                         </div>
                         <!-- Log In Button -->
-                        <button class="btn waves-effect waves-light login" type="submit" name="action">Log In
-                        <i class="material-icons right">send</i>
+
+                        <button class="btn red-btn waves-effect waves-light login" type="submit" name="action">Log In
+                            <i class="material-icons right">send</i>
                         </button>
                     </div>
                 </form>
@@ -147,8 +156,8 @@
                 </div>
             </div>
         </div>
+        <!-- END SIGN IN MODAL -->
     </div>
-
 
     <!-- Our Mission -->
     <div class="section no-pad-bot light" id="index-banner">
@@ -282,43 +291,60 @@
         </div>
     </div>
 
+<!-- START FOOTER -->
+<footer class="page-footer footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would
+                    help support and continue development on this project and is greatly appreciated.</p>
 
-    <footer class="page-footer orange">
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Settings</h5>
+                <ul>
+                    <li>
+                        <a class="white-text" href="#!">Link 1</a>
+                    </li>
+                    <!-- <li>
+                        <a class="white-text" href="#!">Link 2</a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="#!">Link 4</a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li>
+                        <a class="white-text" href="#!">Link 1</a>
+                    </li>
+                    <!-- <li>
+                        <a class="white-text" href="#!">Link 2</a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="#!">Link 4</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="dark-red">
         <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Company Bio</h5>
-                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would
-                        help support and continue development on this project and is greatly appreciated.</p>
-
-
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Settings</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
+            2017 &copy  Thongvun Nak, Ethan Zander, Martin Perez and Bradley Sevison. 
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-            </div>
-        </div>
-    </footer>
+    </div>
+    <!-- END FOOTER -->
+</footer>
 
 
     <!--  Scripts-->
