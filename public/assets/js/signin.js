@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-    $(document).on("submit", "#login-form", function () {
+    $(document).on("submit", "#sign-in-modal", function () {
         var user = $('#login-email').val().trim();
         var password = $('#login-password').val().trim();
         event.preventDefault();
